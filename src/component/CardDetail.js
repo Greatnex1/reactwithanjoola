@@ -1,6 +1,8 @@
 import React from 'react'
 import { faker } from '@faker-js/faker';
 import Wrapper from './Wrapper';
+//import "./CardList.css"
+ 
 const randomName = faker.name.fullName(); // Rowan Nikolaus
 const randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
 
@@ -26,6 +28,7 @@ const  CardDetail = (props) => {
 CardDetail.defaultProps ={
   title : "Testing Card Value",
   description:"Beautiful view always"
+  
 }
 export  default CardDetail
 
