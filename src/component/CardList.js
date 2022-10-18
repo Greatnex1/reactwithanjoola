@@ -1,19 +1,21 @@
 import React from 'react'
 import CardDetail from './CardDetail'
-import { faker } from '@faker-js/faker'
 import "./CardList.css"
+//import NewCard from './NewCard'
 
-const CardList=(props) => {
+const CardList=({data}) => {
   return (  
-    
       
     <div className="card-list">
-    <CardDetail 
-    title="First card"  image={faker.image.city()} description={faker.lorem.paragraphs()}/>;
-    <CardDetail image={faker.image.animals()}/>;
-    <CardDetail image={faker.image.sports()}/>;
+      {data.map((d)=> <CardDetail
+       key={d.id}
+       title={d.title}
+        description={d.description} 
+        image={d.image}/>)}
+    
     </div>
   )
 }
+
 
 export default CardList
