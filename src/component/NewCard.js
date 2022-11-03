@@ -53,7 +53,7 @@ const NewCard = ({setData}) => {
          </div>
       
       
-  <Button color ='red'>Add Card</Button>
+  <Button color='white'>Add Card</Button>
     </form>
   )
   }

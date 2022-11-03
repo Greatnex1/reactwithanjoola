@@ -29,7 +29,7 @@ const  CardDetail = (props) => {
 {/* <NewCard/> */}
 CardDetail.defaultProps ={
   title : "Testing Card Value",
-  description:"Beautiful view always"
+  description:faker.lorem.paragraph()
   
 }
 export  default CardDetail
